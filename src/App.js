@@ -1,35 +1,35 @@
 import "./App.css";
 
+import Header from "./components/layout/Header";
+import SignUp from "./components/Form/SignUp";
+
 function App() {
   return (
     <div className="App">
-      <header>
-        <nav className="flex items-center justify-between p-6 container mx-auto">
-          <title>logo</title>
-          <div className="text-lg text-gray-600 hidden lg:flex">
-            <span className="block mt-4 lg:line text-teal-600 lg:mt-0 mr-10">
-              Home
-            </span>
-            <span className="block mt-4 lg:line text-teal-700 hover:text-gray-700 lg:mt-0 mr-10">
-              Services
-            </span>
-            <span className="block mt-4 lg:line text-teal-700 hover:text-gray-700 lg:mt-0 mr-10">
-              Portfolio
-            </span>
-          </div>
+      <Header />
 
-          <div className="flex items-center">
-            <div className="mr-5 lg:mr-0">
-              <button className="py-2 px-6 rounded-md text-gray-600 hover:text-gray-700 text-lg">
-                Sign in
-              </button>
-              <button className="py-2 px-6 rounded-md bg-purple-600 hover:bg-teal-600 round-md text-white text-lg">
-                Sign up
-              </button>
+      <main>
+        <section className="container mx-auto px-6">
+          <div className="w-full lg:flex items-center">
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-md lg:text-2xl text-gray-600">
+                Market Intelligence Solutions to
+              </h2>
+              <h1 className="text-5xl lg:text-6xl font-bold text-teal-600 mb-2 lg:md-6">
+                Win your market
+              </h1>
+              <p className="text-md lg:text-lg font-light text-gray-800 mb-8">
+                Powerful analytics tools for your business. See the exact
+                keywords for which your competitors rank in organic search and
+                the amount of traffic driven by each of them.
+              </p>
+            </div>
+            <div className="w-full lg:w-1/2 lg:pl-24">
+              <SignUp />
             </div>
           </div>
-        </nav>
-      </header>
+        </section>
+      </main>
     </div>
   );
 }
