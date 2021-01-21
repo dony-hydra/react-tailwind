@@ -34,8 +34,7 @@ function SignUp() {
         type="submit"
         className="py-3 px-12 bg-green-500 hover:bg-green-600 mr-5 rounded-md text-white text-lg focus:outline-none w-full"
       >
-        {" "}
-        Request Demo
+        Request
       </button>
     </form>
   );
